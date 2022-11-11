@@ -1,6 +1,8 @@
+
 import { TestBed } from '@angular/core/testing';
 import { RouterTestingModule } from '@angular/router/testing';
 import { AppComponent } from './app.component';
+import { ListarDespesasComponent } from './despesas/listar-despesas/listar-despesas.component';
 
 describe('AppComponent', () => {
   beforeEach(async () => {
@@ -11,6 +13,7 @@ describe('AppComponent', () => {
       declarations: [
         AppComponent
       ],
+      
     }).compileComponents();
   });
 
@@ -19,6 +22,8 @@ describe('AppComponent', () => {
     const app = fixture.componentInstance;
     expect(app).toBeTruthy();
   });
+
+  
 
   it(`should have as title 'testes'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
@@ -30,6 +35,11 @@ describe('AppComponent', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('.content span')?.textContent).toContain('testes app is running!');
+    expect(compiled.querySelector('.content span')?.textContent).toContain('Listar-despesas app is running!');
   });
+  
+  
+
+  
+
 });

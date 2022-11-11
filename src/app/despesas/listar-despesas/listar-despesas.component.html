@@ -1,0 +1,41 @@
+<div class="p-5">
+    <div class="container shadow p-5">
+        <div class="p-5 border border-ligth rounded">
+            <h6>Despesas</h6>
+            <hr/>
+
+            <form [formGroup]="despesas" (ngSubmit)="listarDespesa()">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="form-group">
+                                <input type="text" class="form-control form-control-sm" 
+                                placeholder="Despesa" formControlName="nome"/>
+                            </div>
+                        </div>
+
+                        <div class="col-2">
+                            <div class="form-group">
+                                <input type="number" class="form-control form-control-sm" 
+                                placeholder="Valor" formControlName="Valor" />
+                            </div>
+                        </div>
+
+                        <div class="col-2">
+                            <button type="submit" class="btn btn-outline-info btn-sm">Listar</button>
+                        </div>
+                       
+                    </div>
+                </div>
+
+            </form>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
